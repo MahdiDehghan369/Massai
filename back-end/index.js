@@ -2,6 +2,7 @@ const express = require('express');
 const app = express()
 const cookieParser = require('cookie-parser');
 const PORT = process.env.PORT || 369
+const cors = require("cors");
 const dbConnect = require('./configs/dbConnect');
 const errorHandler = require('./middlewares/errorHandler');
 const path = require('path');
@@ -19,13 +20,19 @@ const addressRouter = require("./routes/addressRoute");
 const orderRouter = require("./routes/orderRoute");
 const cartRouter = require("./routes/cartRoute");
 const contactRouter = require("./routes/contactRoute");
-
 app.use("/public", express.static(path.join(__dirname, "public")));
 
 // Set Middlewares
 app.use(cookieParser())
 app.use(express.json()); 
 app.use(express.urlencoded({ extended: true })); 
+
+app.use(cors({
+  origin: [
+    "https://massai-git-master-syavash.vercel.app",
+  ],
+  credentials: true,
+}));
 
 
 // Api Router
