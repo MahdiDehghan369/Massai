@@ -1,0 +1,9 @@
+@media (min-width: 1024px) {
+  body .container {
+    max-width: 88rem;
+  }
+}
+
+.text-xxs{
+  font-size: 12px;
+}
