@@ -29,7 +29,8 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(cors({
   origin: [
-    "https://massai-bsx1.vercel.app",
+    "https://massai-git-master-syavash.vercel.app",
+    "https://massai-bsx1.vercel.app/"
   ],
   credentials: true,
 }));
