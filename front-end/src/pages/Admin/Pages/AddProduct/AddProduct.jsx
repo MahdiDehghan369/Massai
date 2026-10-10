@@ -111,7 +111,7 @@ const AddProduct = () => {
     const setDefaultValue = () => {
         if (productDetials) {
             setFileInput(true)
-            const imageSrc = `https://tarkhineh-api.liara.run/public${productDetials.gallery[0]}`
+            const imageSrc = `https://massai.onrender.com/public${productDetials.gallery[0]}`
             reset({
                 title: productDetials.title,
                 description: productDetials.description,
