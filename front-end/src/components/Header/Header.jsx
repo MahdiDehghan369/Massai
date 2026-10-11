@@ -60,7 +60,7 @@ const Header = ({ openLogin = false }) => {
           و رمزعبور
           <span className="text-white font-Estedad-Medium"> Admin@123 </span>
           وارد شوید.
-          <Link className="mr-5 text-gray-200">https://massai-git-master-syavash.vercel.app/p-admin</Link>
+          <Link className="mr-5 text-gray-200">https://massai-bsx1.vercel.app/p-admin</Link>
         </p>
       </div>
       <header className="mt-5 sm:mt6 shadow-sm  pb-5">
