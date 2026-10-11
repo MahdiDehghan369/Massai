@@ -27,9 +27,10 @@ app.use(cookieParser())
 app.use(express.json()); 
 app.use(express.urlencoded({ extended: true })); 
 
+
 app.use(cors({
   origin: [
-    "https://massai-bsx1.vercel.app/"
+    "https://massai-bsx1.vercel.app"
   ],
   credentials: true,
 }));
